@@ -130,6 +130,7 @@ footer h3 {
     border: 4px solid white;
     border-radius: 50px;
     padding: 10px;
+    color: white;
 }
 .logo:hover{
     animation-name: logo_transition;
@@ -143,13 +144,11 @@ footer h3 {
     to{background-color: rgb(255, 255, 255); color: rgb(13, 13, 13);}
 }
 
-
 #footer_legend{
     display: flex;
     justify-content: space-evenly;
 
     background-color: black;
-    
 }
 
 #footer_legend p {
@@ -157,4 +156,8 @@ footer h3 {
     padding: 1ex;
 
     font-size: 1.5ex;
+}
+#footer_legend a{
+        text-decoration: none;
+        color: white;
 }
