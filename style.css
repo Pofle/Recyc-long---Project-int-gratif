@@ -2,6 +2,8 @@
 VERT : rgb(51, 163, 51)
 NOIR : rgb(13, 13, 13)
 
+POLICE : font-family: 'heavitas';
+
 
 */
 
@@ -96,8 +98,17 @@ section {
 }
 
 footer {
-    border : 2px solid purple;
+    display: flex;
+    justify-content: space-evenly;
 
     width: 95%;
-    
+    background-color: rgb(13, 13, 13);
+    color: white;
+    font-family: 'heavitas';    
+}
+
+footer h3 {
+    border-bottom: 4px solid white;
+    border-top: 4px solid white;
+    padding: 3px 0px;
 }
