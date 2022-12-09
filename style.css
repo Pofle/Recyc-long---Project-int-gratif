@@ -74,6 +74,24 @@ nav {
 
     font-family: 'heavitas';
 }
+
+#menu a {
+    text-decoration: none;
+    color: rgb(13, 13, 13);
+    padding-bottom: 2ex;
+}
+#menu a:hover{
+    color: white;
+    animation-name: nav_transition;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+}
+/* Animation navigation */
+@keyframes nav_transition {
+    from{color:black;}
+    to{color:white;}
+    
+}
 .hvr-underline-from-center {
     display: inline-block;
     vertical-align: middle;
@@ -103,20 +121,6 @@ nav {
     left: 0;
     right: 0;
   }
-
-#menu a {
-    text-decoration: none;
-    color: rgb(13, 13, 13);
-    padding-bottom: 2ex;
-}
-#menu a:hover{
-    color: white;
-    animation-name: nav_transition;
-    animation-duration: 0.4s;
-    animation-timing-function: linear;
-
-}
-
 
 section {
     border: 2px solid green;
