@@ -125,6 +125,7 @@ nav {
 section {
     border: 2px solid green;
     width: 100%;
+    background: rgb(230, 230, 230);
 
     
     margin-top: 2%;
@@ -134,7 +135,6 @@ footer {
     width: 100%;
     color: white; 
 }
-
 #footer_box {
     display: flex;
     justify-content: space-evenly;
@@ -158,12 +158,12 @@ footer h3 {
     color: white;
 }
 .logo-reseaux:hover{
-    animation-name: logo_transition;
+    animation-name: logo_transition-hvr;
     animation-duration: 0.5s;
     background-color: rgb(255, 255, 255);
     color: rgb(13, 13, 13);
 }
-@keyframes logo_transition {
+@keyframes logo_transition-hvr {
     from {background-color: transparent; color:rgb(255, 255, 255)}
     to{background-color: rgb(255, 255, 255); color: rgb(13, 13, 13);}
 }
