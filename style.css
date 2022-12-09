@@ -2,7 +2,8 @@
 VERT : rgb(51, 163, 51)
 NOIR : rgb(13, 13, 13)
 
-POLICE : font-family: 'heavitas';
+POLICE TITRE: font-family: 'heavitas';
+POLICE PARAGRAPHE : 'geoslab'
 
 
 */
@@ -12,6 +13,12 @@ POLICE : font-family: 'heavitas';
     font-family: 'heavitas';
     src: url('fonts/Heavitas.ttf') format('truetype');
         font-weight: normal;
+        font-style: normal; 
+}
+@font-face {
+    font-family: 'geoslab';
+    src : url('fonts/GeoSlab\ _regular.otf') format('opentype');
+        font-weight: normal;
         font-style: normal;
 }
 
@@ -20,6 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'geoslab';
 }
 
 header {
@@ -53,7 +61,6 @@ img + p { /* Touche le SLOGAN sous le logo */
     padding: 5px 10px 5px 10px;
     border-radius: 10px 10px 10px 10px;
     
-
     font-family: 'heavitas';
     font-size: 6ex;
     color: rgb(13, 13, 13);
@@ -67,7 +74,7 @@ nav {
     background-color: rgb(51, 163, 51);
 }
 
-#menu { /* id= menu da la liste <ul>*/
+#menu { /* id= menu de la liste <ul>*/
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
@@ -104,11 +111,15 @@ footer {
     width: 95%;
     background-color: rgb(13, 13, 13);
     color: white;
-    font-family: 'heavitas';    
+    
+        
 }
 
 footer h3 {
+    width: max-content;
     border-bottom: 4px solid white;
     border-top: 4px solid white;
     padding: 3px 0px;
+
+    font-family: 'heavitas';
 }
