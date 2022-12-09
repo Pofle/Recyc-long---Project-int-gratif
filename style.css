@@ -1,0 +1,100 @@
+/* -----CHARTE GRAPHIQUE----- 
+VERT : rgb(51, 163, 51)
+
+
+*/
+
+
+@font-face {
+    font-family: 'heavitas';
+    src: url('fonts/Heavitas.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+
+    width: 95%;
+    height: 12ex;
+    background-color: rgb(51, 163, 51);
+}
+header img {
+    width : 80px;
+    margin: 5px 5px 0px 5px;
+    position: relative;
+    z-index: 2;
+}
+
+img + p { /* Touche le SLOGAN sous le logo */
+    position: relative;
+    z-index: 2;
+    
+    margin: 0px 0px 0px 5px;
+}
+
+#logo + p { /* Touche "Recyc'long !" */
+    display: block;
+    width: max-content;
+    margin: 10px 430px; /* TESTER AVEC EM CAR ITEM BOUGE*/
+    margin-top: 10px;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px 10px 10px 10px;
+    
+
+    font-family: 'heavitas';
+    font-size: 6ex;
+}
+
+nav {
+    border-radius: 0px 0px 10px 10px;
+    position: relative;
+    z-index: 1;
+    width: 95%;
+    background-color: rgb(51, 163, 51);
+}
+
+#menu { /* id= menu da la liste <ul>*/
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+    font-family: 'heavitas';
+}
+#menu a {
+    text-decoration: none;
+    color: black;
+}
+#menu a:hover{
+    animation-name: color_transition;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    color: white; border-bottom: 2px solid white;
+}
+@keyframes color_transition {
+    from {color: black; border-bottom: 2px solid black;}
+    to {color: white; border-bottom: 2px solid white;}
+}
+
+
+section {
+    border: 2px solid green;
+
+    width: 95%;
+    margin-top: 2%;
+}
+
+footer {
+    border : 2px solid purple;
+
+    width: 95%;
+}
