@@ -8,7 +8,6 @@ POLICE PARAGRAPHE : 'geoslab'
 
 */
 
-
 @font-face {
     font-family: 'heavitas';
     src: url('fonts/Heavitas.ttf') format('truetype');
@@ -22,7 +21,6 @@ POLICE PARAGRAPHE : 'geoslab'
         font-style: normal;
 }
 
-
 body {
     display: flex;
     flex-direction: column;
@@ -32,37 +30,33 @@ body {
 
 header {
     display: flex;
+    
     border-radius: 10px 10px 0px 0px;
 
     width: 98%;
-    height: 12ex;
+   
     background-color: rgb(51, 163, 51);
 }
 header img {
     width : 80px;
-    margin: 5px 5px 0px 5px;
-    position: relative;
-    z-index: 2;
+    margin: 1em 0px 0px 1em;
 }
 
-img + p { /* Touche le SLOGAN sous le logo */
-    position: relative;
-    z-index: 2;
-    
+#logo_box p { /* Touche le SLOGAN sous le logo */
     margin: 0px 0px 0px 5px;
 }
 
-#logo + p { /* Touche "Recyc'long !" */
-    display: block;
+#logo_box + h1 { /* Touche "Recyc'long !" */
+
     width: max-content;
-    margin: 10px 430px; /* TESTER AVEC EM CAR ITEM BOUGE*/
-    margin-top: 10px;
-    background-color: white;
-    padding: 5px 10px 5px 10px;
-    border-radius: 10px 10px 10px 10px;
+    height: max-content;
+    margin: 1ex 0ex 0ex 30%;
     
+    background-color: white;
+    padding: 1ex;
+    border-radius: 10px;
+
     font-family: 'heavitas';
-    font-size: 6ex;
     color: rgb(13, 13, 13);
 }
 
@@ -85,16 +79,23 @@ nav {
 #menu a {
     text-decoration: none;
     color: rgb(13, 13, 13);
+    padding: 0em 2em;
+    border-left: 2px solid rgb(51, 163, 51); 
+    border-right: 2px solid rgb(51, 163, 51);
 }
 #menu a:hover{
-    animation-name: color_transition;
-    animation-duration: 0.8s;
+    color: white;
+    animation-name: nav_transition;
+    animation-duration: 0.4s;
     animation-timing-function: linear;
-    color: white; border-bottom: 2px solid white;
+
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 }
-@keyframes color_transition {
-    from {color: rgb(13, 13, 13); border-bottom: 2px solid rgb(13, 13, 13);}
-    to {color: white; border-bottom: 2px solid white;}
+
+@keyframes nav_transition {
+    from {color: rgb(13, 13, 13);border-left: 2px solid rgb(51, 163, 51); border-right: 2px solid rgb(51, 163, 51); }
+    to {color: white; border-left: 2px solid white; border-right: 2px solid white;}
 }
 
 section {
@@ -124,14 +125,14 @@ footer h3 {
     font-family: 'heavitas';
 }
 
-.logo {
+.logo-reseaux {
     width: max-content;
     border: 4px solid white;
     border-radius: 50px;
     padding: 10px;
     color: white;
 }
-.logo:hover{
+.logo-reseaux:hover{
     animation-name: logo_transition;
     animation-duration: 0.5s;
     background-color: rgb(255, 255, 255);
