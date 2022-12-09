@@ -32,10 +32,11 @@ body {
 
 header {
     display: flex;
+    
     border-radius: 10px 10px 0px 0px;
 
     width: 98%;
-    height: 12ex;
+   
     background-color: rgb(51, 163, 51);
 }
 header img {
@@ -52,17 +53,17 @@ img + p { /* Touche le SLOGAN sous le logo */
     margin: 0px 0px 0px 5px;
 }
 
-#logo + p { /* Touche "Recyc'long !" */
-    display: block;
+#logo + h1 { /* Touche "Recyc'long !" */
+
     width: max-content;
-    margin: 10px 430px; /* TESTER AVEC EM CAR ITEM BOUGE*/
-    margin-top: 10px;
-    background-color: white;
-    padding: 5px 10px 5px 10px;
-    border-radius: 10px 10px 10px 10px;
+    height: max-content;
+    margin: 1ex 0ex 0ex 30%;
     
+    background-color: white;
+    padding: 1ex;
+    border-radius: 10px;
+
     font-family: 'heavitas';
-    font-size: 6ex;
     color: rgb(13, 13, 13);
 }
 
