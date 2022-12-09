@@ -1,5 +1,6 @@
 /* -----CHARTE GRAPHIQUE----- 
 VERT : rgb(51, 163, 51)
+NOIR : rgb(13, 13, 13)
 
 
 */
@@ -53,6 +54,7 @@ img + p { /* Touche le SLOGAN sous le logo */
 
     font-family: 'heavitas';
     font-size: 6ex;
+    color: rgb(13, 13, 13);
 }
 
 nav {
@@ -72,7 +74,7 @@ nav {
 }
 #menu a {
     text-decoration: none;
-    color: black;
+    color: rgb(13, 13, 13);
 }
 #menu a:hover{
     animation-name: color_transition;
@@ -81,7 +83,7 @@ nav {
     color: white; border-bottom: 2px solid white;
 }
 @keyframes color_transition {
-    from {color: black; border-bottom: 2px solid black;}
+    from {color: rgb(13, 13, 13); border-bottom: 2px solid rgb(13, 13, 13);}
     to {color: white; border-bottom: 2px solid white;}
 }
 
@@ -97,4 +99,5 @@ footer {
     border : 2px solid purple;
 
     width: 95%;
+    
 }
