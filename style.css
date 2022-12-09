@@ -34,7 +34,7 @@ header {
     display: flex;
     border-radius: 10px 10px 0px 0px;
 
-    width: 95%;
+    width: 98%;
     height: 12ex;
     background-color: rgb(51, 163, 51);
 }
@@ -67,11 +67,12 @@ img + p { /* Touche le SLOGAN sous le logo */
 }
 
 nav {
-    border-radius: 0px 0px 10px 10px;
     position: relative;
     z-index: 1;
-    width: 95%;
+    width: 98%;
+
     background-color: rgb(51, 163, 51);
+    border-radius: 0px 0px 10px 10px;
 }
 
 #menu { /* id= menu de la liste <ul>*/
@@ -100,17 +101,19 @@ nav {
 section {
     border: 2px solid green;
 
-    width: 95%;
+    width: 98%;
     margin-top: 2%;
 }
 
 footer {
+    width: 98%;
+    color: white; 
+}
+
+#footer_box {
     display: flex;
     justify-content: space-evenly;
-
-    width: 95%;
     background-color: rgb(13, 13, 13);
-    color: white; 
 }
 
 footer h3 {
@@ -122,8 +125,23 @@ footer h3 {
     font-family: 'heavitas';
 }
 
-.footer_box i {
+.footer_item i {
     border: 4px solid white;
     border-radius: 50px;
     padding: 10px;
+}
+
+#footer_legend{
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: black;
+    
+}
+
+#footer_legend p {
+    margin: 0%;
+    padding: 1ex;
+
+    font-size: 1.5ex;
 }
