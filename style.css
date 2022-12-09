@@ -22,6 +22,7 @@ POLICE PARAGRAPHE : 'geoslab'
 }
 
 body {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,11 +31,10 @@ body {
 
 header {
     display: flex;
-    
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
 
-    width: 98%;
-   
+
     background-color: rgb(51, 163, 51);
 }
 header img {
@@ -61,9 +61,7 @@ header img {
 }
 
 nav {
-    position: relative;
-    z-index: 1;
-    width: 98%;
+    width: 100%;
 
     background-color: rgb(51, 163, 51);
     border-radius: 0px 0px 10px 10px;
@@ -76,12 +74,40 @@ nav {
 
     font-family: 'heavitas';
 }
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: white;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+
 #menu a {
     text-decoration: none;
     color: rgb(13, 13, 13);
-    padding: 0em 2em;
-    border-left: 2px solid rgb(51, 163, 51); 
-    border-right: 2px solid rgb(51, 163, 51);
+    padding-bottom: 2ex;
 }
 #menu a:hover{
     color: white;
@@ -89,24 +115,19 @@ nav {
     animation-duration: 0.4s;
     animation-timing-function: linear;
 
-    border-left: 2px solid white;
-    border-right: 2px solid white;
 }
 
-@keyframes nav_transition {
-    from {color: rgb(13, 13, 13);border-left: 2px solid rgb(51, 163, 51); border-right: 2px solid rgb(51, 163, 51); }
-    to {color: white; border-left: 2px solid white; border-right: 2px solid white;}
-}
 
 section {
     border: 2px solid green;
+    width: 100%;
 
-    width: 98%;
+    
     margin-top: 2%;
 }
 
 footer {
-    width: 98%;
+    width: 100%;
     color: white; 
 }
 
