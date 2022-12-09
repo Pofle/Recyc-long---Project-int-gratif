@@ -97,7 +97,6 @@ nav {
     to {color: white; border-bottom: 2px solid white;}
 }
 
-
 section {
     border: 2px solid green;
 
@@ -137,7 +136,6 @@ footer h3 {
     animation-duration: 0.5s;
     background-color: rgb(255, 255, 255);
     color: rgb(13, 13, 13);
-    cursor: pointer;
 }
 @keyframes logo_transition {
     from {background-color: transparent; color:rgb(255, 255, 255)}
@@ -146,7 +144,7 @@ footer h3 {
 
 #footer_legend{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 
     background-color: black;
 }
