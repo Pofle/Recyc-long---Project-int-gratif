@@ -27,7 +27,10 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'geoslab';
+    font-family: 'geoslab', sans-serif;
+}
+span{
+    font-family: sans-serif; /*Problème avec le POINT de cette caligraphie et flemme pour le moment d'en changer...*/
 }
 #header_box{
     width: 100%;
@@ -124,12 +127,18 @@ nav {
   }
 
 section {
-    border: 2px solid green;
+    
     width: 100%;
     background: rgb(230, 230, 230);
     position: relative;
     margin-top: 13%;
     
+}
+.presentation_item{
+    display: flex;
+}
+.presentation_item img {
+    clip-path:ellipse(33% 50%);
 }
 
 footer {
