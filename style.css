@@ -38,7 +38,6 @@ span{
     position: fixed;
     z-index: 2;
     
-    
 }
 header {
     display: flex;
@@ -127,18 +126,29 @@ nav {
   }
 
 section {
-    
     width: 100%;
-    background: rgb(230, 230, 230);
     position: relative;
     margin-top: 13%;
-    
+}
+#article-presentation_box{
+    background: rgb(230, 230, 230);
 }
 .presentation_item{
     display: flex;
+    justify-content: center;
 }
 .presentation_item img {
+    width: 30%;
     clip-path:ellipse(33% 50%);
+}
+.presentation_item h2{
+    font-size: 4ex;
+}
+.presentation_item p {
+    text-align: justify;
+}
+.presentation_txt{
+    width: 20%;
 }
 
 footer {
