@@ -28,35 +28,37 @@
             </nav>
         </div>
         
-        <section id="section-formulaire_box">
-            <div id="formulaire_box">
+        <section >
+            <div id="section-formulaire_box">
+            <div class="formulaire_item">
+                <img src="assets/images/recyclong_logo.png"/>
                 <h2>Veuillez vous inscrire à notre site web</h2>
                 <form method="get" action="confirmation.html">
                     <table>
                         <tr>
-                            <td><label for="appellation">Appellation: </label></td>
-                            <td><label for="prename">Prénom: </label></td>
-                            <td><label for="nom">Nom: </label></td>  
+                            <td><label for="appellation">Civilité : </label></td>
+                            <td><label for="prename">Prénom : (*) </label></td>
+                            <td><label for="nom">Nom : (*) </label></td>  
                         </tr>
                         <tr>
                             <td>
-                                <SELECT name="appellation" size="1" id="appellation" required>
+                                <SELECT name="appellation" size="1" id="appellation">
                                     <OPTION>   </OPTION>
                                     <OPTION>Mme</OPTION>
                                     <OPTION>M.</OPTION>
-                                </SELECT> (*)
+                                </SELECT>
                             </td>
                             <td>
-                                <input type="text" id="prename" name="prename" maxlength="40" placeholder="Entrez votre prénom" title="Entrez votre prénom" required/> (*)
+                                <input type="text" id="prename" name="prename" maxlength="40" placeholder="Entrez votre prénom" title="Entrez votre prénom" required/> 
                             </td>
                             <td>
-                                <input type="text" id="nom" name="nom" maxlength="40" placeholder="Entrez votre nom" title="Entrez votre nom" required/> (*)
+                                <input type="text" id="nom" name="nom" maxlength="40" placeholder="Entrez votre nom" title="Entrez votre nom" required/>
                             </td>             
                         </tr>
                         <tr>
-                            <td><label for="age">Age: </label></td>
-                            <td><label for="ville">Ville: </label></td>
-                            <td><label for="email">Adresse email: </label></td>
+                            <td><label for="age">Age : (*) </label></td>
+                            <td><label for="ville">Ville : </label></td>
+                            <td><label for="email">Adresse email : (*) </label></td>
                         </tr>
                         <tr>
                             <td>
@@ -71,22 +73,27 @@
                                     <OPTION>65 - 70 </OPTION>
                                     <OPTION>75 - 80 </OPTION>
                                     <OPTION>85 - 90 </OPTION>
-                                </SELECT> (*)
+                                </SELECT> 
                             </td>
                             <td>
-                                <input type="text" id="ville" name="ville" maxlength="40" placeholder="Entrez votre ville" title="Entrez votre ville" required/> (*)
+                                <input type="text" id="ville" name="ville" maxlength="40" placeholder="Entrez votre ville" title="Entrez votre ville"/> 
                             </td>
                             <td>
-                                <input type="email" id="email" name="email" placeholder="Ex: prenom@gmail.com" title="Entrez votre adresse mail" required/> (*)
+                                <input type="email" id="email" name="email" placeholder="Ex: prenom@gmail.com" title="Entrez votre adresse mail" required/> 
                             </td>    
                         </tr>
-                      
+                    </table>
+                </div>
+                <div class="formulaire_item">
+                    <table>
                         <tr>
                             <td>Votre préférence</td>
-                            <td><input type="radio" name="btn_rdio" checked/>
-                            les recycler
-                            <INPUT type="radio" name="btn_rdio"/> 
-                            les éviter</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="btn_rdio" checked/> les recycler
+                                <INPUT type="radio" name="btn_rdio"/> les éviter
+                            </td>
                         </tr>
                         <tr>
                             <td>J'ai lu les conditions générales<span>.</span></td>
@@ -99,8 +106,9 @@
                             <td><input type="reset" value="Reset" name="reset" id="reset"></td>
                         </tr>
                     </table>
+                </div>
                 </form>
-            </div>          
+            </div>       
         </section>
 
         <footer>

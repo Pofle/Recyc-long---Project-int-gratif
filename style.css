@@ -30,6 +30,7 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: 'geoslab', sans-serif;
+    background: rgb(230, 230, 230);
 }
 span{
     font-family: sans-serif; /*Problème avec le POINT de cette caligraphie et flemme pour le moment d'en changer...*/
@@ -227,14 +228,23 @@ footer h3 {
 
 /* --------------------------- SECTION PAGE LOGIN --------------------------- */
 #section-formulaire_box{
-    background: rgb(230, 230, 230);
+    background: white;
+    width: max-content;
+    margin: auto;
 }
-#formulaire_box{
-    background-color: white;
+.formulaire_item{
+    
     width: max-content;
     padding: 2ex;
     margin: auto;
 }
+table{
+    text-align: center;
+}
+td {
+    margin-left: 2ex;
+}
+
 input[type=text],
 input[type=email],
 select {
@@ -246,7 +256,6 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 1px 1px 2px #999;
-    
 }
 select {
     width: 6em;
@@ -256,6 +265,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 1px 1px 2px #999;
-   
 }
-  
+select:focus {
+    background: url("assets/images/arrow_up.png") 90% / 20% no-repeat #eee;
+}
