@@ -133,6 +133,7 @@ section {
 }
 #article-presentation_box{
     background: rgb(230, 230, 230);
+    padding-bottom: 2em;
 }
 .presentation_item{
     display: flex;
@@ -153,11 +154,19 @@ section {
 }
 
 #article-agir_box{
-    display: flex;
     background: rgb(102, 179, 255);
+    display: flex;
+    justify-content: center;
 }
 #article-agir_box img{
-    width: 10em;
+    width: 8em;
+    height: 8em;
+    margin-right: 7em;
+    margin-top: 2em;
+}
+.agir_txt{
+    width: 30%;
+    text-align: justify;
 }
 footer {
     width: 100%;
