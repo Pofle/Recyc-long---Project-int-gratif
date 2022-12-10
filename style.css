@@ -2,6 +2,7 @@
 VERT : rgb(51, 163, 51)
 NOIR : rgb(13, 13, 13)
 BLEU CLAIR :rgb(102, 179, 255)
+GRIS/BLANC : rgb(230, 230, 230)
 
 POLICE TITRE: font-family: 'heavitas';
 POLICE PARAGRAPHE : 'geoslab'
@@ -11,13 +12,13 @@ POLICE PARAGRAPHE : 'geoslab'
 
 @font-face {
     font-family: 'heavitas';
-    src: url('fonts/Heavitas.ttf') format('truetype');
+    src: url('assets/fonts/Heavitas.ttf') format('truetype');
         font-weight: normal;
         font-style: normal; 
 }
 @font-face {
     font-family: 'geoslab';
-    src : url('fonts/GeoSlab\ _regular.otf') format('opentype');
+    src : url('assets/fonts/GeoSlab\ _regular.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
 }
@@ -171,6 +172,7 @@ section {
 footer {
     width: 100%;
     color: white; 
+    margin-top: 1em;
 }
 #footer_box {
     display: flex;
@@ -224,4 +226,36 @@ footer h3 {
 }
 
 /* --------------------------- SECTION PAGE LOGIN --------------------------- */
-
+#section-formulaire_box{
+    background: rgb(230, 230, 230);
+}
+#formulaire_box{
+    background-color: white;
+    width: max-content;
+    padding: 2ex;
+    margin: auto;
+}
+input[type=text],
+input[type=email],
+select {
+    padding: 1.5ex;
+    border-radius: 5px;
+    margin-bottom: 2em;
+    outline: none;
+    color: #74646e;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #999;
+    
+}
+select {
+    width: 6em;
+    appearance: none;
+    background: url("assets/images/arrow_down.png") 90% / 20% no-repeat #eee;
+    color: #74646e;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #999;
+   
+}
+  

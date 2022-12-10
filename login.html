@@ -13,7 +13,7 @@
         <div id="header_box">
             <header>
                 <div id="logo-header_box">
-                    <img src="images/recycler.png"/>
+                    <img src="assets/images/recycler.png"/>
                     <p> Blabla Slogan</p>
                 </div>
                 <h1>Recyc'long </h1>
@@ -28,8 +28,79 @@
             </nav>
         </div>
         
-        <section>
+        <section id="section-formulaire_box">
+            <div id="formulaire_box">
+                <h2>Veuillez vous inscrire à notre site web</h2>
+                <form method="get" action="confirmation.html">
+                    <table>
+                        <tr>
+                            <td><label for="appellation">Appellation: </label></td>
+                            <td><label for="prename">Prénom: </label></td>
+                            <td><label for="nom">Nom: </label></td>  
+                        </tr>
+                        <tr>
+                            <td>
+                                <SELECT name="appellation" size="1" id="appellation" required>
+                                    <OPTION>   </OPTION>
+                                    <OPTION>Mme</OPTION>
+                                    <OPTION>M.</OPTION>
+                                </SELECT> (*)
+                            </td>
+                            <td>
+                                <input type="text" id="prename" name="prename" maxlength="40" placeholder="Entrez votre prénom" title="Entrez votre prénom" required/> (*)
+                            </td>
+                            <td>
+                                <input type="text" id="nom" name="nom" maxlength="40" placeholder="Entrez votre nom" title="Entrez votre nom" required/> (*)
+                            </td>             
+                        </tr>
+                        <tr>
+                            <td><label for="age">Age: </label></td>
+                            <td><label for="ville">Ville: </label></td>
+                            <td><label for="email">Adresse email: </label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <SELECT name="age" size="1" id="age" required>
+                                    <OPTION>   </OPTION>
+                                    <OPTION>15 - 20 </OPTION>
+                                    <OPTION>20 - 25 </OPTION>
+                                    <OPTION>25 - 30 </OPTION>
+                                    <OPTION>30 - 35 </OPTION>
+                                    <OPTION>40 - 45 </OPTION>
+                                    <OPTION>50 - 55 </OPTION>
+                                    <OPTION>65 - 70 </OPTION>
+                                    <OPTION>75 - 80 </OPTION>
+                                    <OPTION>85 - 90 </OPTION>
+                                </SELECT> (*)
+                            </td>
+                            <td>
+                                <input type="text" id="ville" name="ville" maxlength="40" placeholder="Entrez votre ville" title="Entrez votre ville" required/> (*)
+                            </td>
+                            <td>
+                                <input type="email" id="email" name="email" placeholder="Ex: prenom@gmail.com" title="Entrez votre adresse mail" required/> (*)
+                            </td>    
+                        </tr>
                       
+                        <tr>
+                            <td>Votre préférence</td>
+                            <td><input type="radio" name="btn_rdio" checked/>
+                            les recycler
+                            <INPUT type="radio" name="btn_rdio"/> 
+                            les éviter</td>
+                        </tr>
+                        <tr>
+                            <td>J'ai lu les conditions générales<span>.</span></td>
+                            <td><input type="checkbox" name="condition" id="condition" title="Ceci est obligatoire"
+                                required/> (*)</td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Envoi" name="submit" id="submit" 
+                                title="Confirmer votre réservation"/></td>
+                            <td><input type="reset" value="Reset" name="reset" id="reset"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>          
         </section>
 
         <footer>
