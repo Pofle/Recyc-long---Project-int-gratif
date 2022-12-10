@@ -1,6 +1,7 @@
 /* -----CHARTE GRAPHIQUE----- 
 VERT : rgb(51, 163, 51)
 NOIR : rgb(13, 13, 13)
+BLEU CLAIR :rgb(102, 179, 255)
 
 POLICE TITRE: font-family: 'heavitas';
 POLICE PARAGRAPHE : 'geoslab'
@@ -23,31 +24,36 @@ POLICE PARAGRAPHE : 'geoslab'
 
 body {
     width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'geoslab';
+    font-family: 'geoslab', sans-serif;
 }
-
+span{
+    font-family: sans-serif; /*Problème avec le POINT de cette caligraphie et flemme pour le moment d'en changer...*/
+}
+#header_box{
+    width: 100%;
+    background: rgb(51, 163, 51);
+    position: fixed;
+    z-index: 2;
+    
+}
 header {
     display: flex;
-    width: 100%;
-    border-radius: 10px 10px 0px 0px;
-
-
-    background-color: rgb(51, 163, 51);
+    
 }
 header img {
     width : 80px;
     margin: 1em 0px 0px 1em;
 }
 
-#logo_box p { /* Touche le SLOGAN sous le logo */
+#logo-header_box p { /* Touche le SLOGAN sous le logo */
     margin: 0px 0px 0px 5px;
 }
 
-#logo_box + h1 { /* Touche "Recyc'long !" */
-
+#logo-header_box + h1 { /* Touche "Recyc'long !" */
     width: max-content;
     height: max-content;
     margin: 1ex 0ex 0ex 30%;
@@ -61,10 +67,8 @@ header img {
 }
 
 nav {
-    width: 100%;
-
     background-color: rgb(51, 163, 51);
-    border-radius: 0px 0px 10px 10px;
+    
 }
 
 #menu { /* id= menu de la liste <ul>*/
@@ -123,18 +127,51 @@ nav {
   }
 
 section {
-    border: 2px solid green;
     width: 100%;
-
-    
-    margin-top: 2%;
+    position: relative;
+    margin-top: 13%;
+}
+#article-presentation_box{
+    background: rgb(230, 230, 230);
+    padding-bottom: 2em;
+}
+.presentation_item{
+    display: flex;
+    justify-content: center;
+}
+.presentation_item img {
+    width: 30%;
+    clip-path:ellipse(33% 50%);
+}
+.presentation_item h2{
+    font-size: 4ex;
+}
+.presentation_item p {
+    text-align: justify;
+}
+.presentation_txt{
+    width: 20%;
 }
 
+#article-agir_box{
+    background: rgb(102, 179, 255);
+    display: flex;
+    justify-content: center;
+}
+#article-agir_box img{
+    width: 8em;
+    height: 8em;
+    margin-right: 7em;
+    margin-top: 2em;
+}
+.agir_txt{
+    width: 30%;
+    text-align: justify;
+}
 footer {
     width: 100%;
     color: white; 
 }
-
 #footer_box {
     display: flex;
     justify-content: space-evenly;
@@ -158,12 +195,12 @@ footer h3 {
     color: white;
 }
 .logo-reseaux:hover{
-    animation-name: logo_transition;
+    animation-name: logo_transition-hvr;
     animation-duration: 0.5s;
     background-color: rgb(255, 255, 255);
     color: rgb(13, 13, 13);
 }
-@keyframes logo_transition {
+@keyframes logo_transition-hvr {
     from {background-color: transparent; color:rgb(255, 255, 255)}
     to{background-color: rgb(255, 255, 255); color: rgb(13, 13, 13);}
 }
