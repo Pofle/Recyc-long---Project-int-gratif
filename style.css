@@ -1,6 +1,7 @@
 /* -----CHARTE GRAPHIQUE----- 
 VERT : rgb(51, 163, 51)
 NOIR : rgb(13, 13, 13)
+BLEU CLAIR :rgb(102, 179, 255)
 
 POLICE TITRE: font-family: 'heavitas';
 POLICE PARAGRAPHE : 'geoslab'
@@ -151,6 +152,13 @@ section {
     width: 20%;
 }
 
+#article-agir_box{
+    display: flex;
+    background: rgb(102, 179, 255);
+}
+#article-agir_box img{
+    width: 10em;
+}
 footer {
     width: 100%;
     color: white; 
