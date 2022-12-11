@@ -1,110 +1,138 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link href="style.css" rel="stylesheet" type="text/css"/>
-        <script type="text/javascript" src="script.js"></script>
-        <script src="https://kit.fontawesome.com/81109a7f0c.js" crossorigin="anonymous"></script>
-        
-        <title>Recyc'long</title>
-    </head>
 
-    <body>
-        <header>
-                <div id="logo-header_box">
-                    <img src="assets/images/recyclong_logo.png"/>
-                    <p> Blabla Slogan</p>
-                </div>
-                <h1>Recyc'long </h1>
-                <nav>
-                    <ul id="nav-ul_box">
-                        <li><a class="hvr-underline-from-center" href="index.html">Accueil</a></li>
-                        <li><a class="hvr-underline-from-center" href="#">Recyclez </a></li>
-                        <li><a class="hvr-underline-from-center" href="signup.html">S'inscrire</a></li>
-                        <li><a class="hvr-underline-from-center" href="#">Se connecter</a></li>
-                    </ul>
-                </nav>
-        </header> 
-        
-        <section >
-            <div id="section-formulaire_box">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/81109a7f0c.js" crossorigin="anonymous"></script>
+
+    <title>Recyc'long</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo-header_box">
+            <img src="assets/images/recyclong_logo.png" />
+            <p> Blabla Slogan</p>
+        </div>
+        <h1>Recyc'long </h1>
+        <nav>
+            <ul id="nav-ul_box">
+                <li><a class="hvr-underline-from-center" href="index.html">Accueil</a></li>
+                <li><a class="hvr-underline-from-center" href="#">Recyclez </a></li>
+                <li><a class="hvr-underline-from-center" href="signup.html">S'inscrire</a></li>
+                <li><a class="hvr-underline-from-center" href="#">Se connecter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<!-- ===========================================================-->
+<!-- <section> begin ===========-->
+    <section>
+        <!-- ===========================================================-->
+            <!-- <div CONTAINER formulaire begin ===========-->
+        <div id="section-formulaire_box">
+            <!-- ===========================================================-->
+            <!-- <div item LOGO begin ===========-->
+            <div class="formulaire_item">
+                <img id="formulaire_logo" src="assets/images/recyclong_logo.png" />
+                <h3>En vous inscrivant vous bénéficiez de toutes nos fonctionnalités !</h3>
+            </div>
+            <!-- <div item LOGO close ============-->
+            <!-- ===========================================================-->
+
+
+            <!-- ===========================================================-->
+            <!-- <FORMULAIRE D'INSCRIPTION begin ===========-->
+            <form method="get" action="confirmation.html">
+                <!-- ===========================================================-->
+                <!-- <div item INFORMATIONS du <form> begin ===========-->
                 <div class="formulaire_item">
-                        <img id="formulaire_logo" src="assets/images/recyclong_logo.png"/>
-                        <h3>En vous inscrivant vous bénéficiez de toutes nos fonctionnalités !</h3>
-                    <form method="get" action="confirmation.html">
-                    <div class="formulaire_input">
-                        <table name="informations">
-                            <tr>
-                                <td><label for="civilite">Civilité : </label></td>
-                                <td><label for="prenom">Prénom :</label></td>
-                                <td><label for="nom">Nom : </label></td>  
-                            </tr>
-                            <tr>
-                                <td>
-                                    <SELECT name="civilite" size="1" id="appellation">
-                                        <OPTION>   </OPTION>
-                                        <OPTION>Mme</OPTION>
-                                        <OPTION>M.</OPTION>
-                                    </SELECT>
-                                </td>
-                                <td>
-                                    <input type="text" id="prenom" name="prename" maxlength="40" placeholder="Ex: Michel" title="Cette information sera invisible"/> 
-                                </td>
-                                <td>
-                                    <input type="text" id="nom" name="nom" maxlength="40" placeholder="Ex: Dupont" title="Cette information sera invisible"/>
-                                </td>             
-                            </tr>
-                            <tr>
-                                <td><label for="age">Age : <span class="txt-smaller">(*)</span> </label></td>
-                                <td><label for="ville">Commune : </label></td>
-                                <td><label for="email">Adresse email : <span class="txt-smaller">(*)</span> </label></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <SELECT name="age" size="1" id="age" required>
-                                        <OPTION>   </OPTION>
-                                        <OPTION>15 - 20 </OPTION>
-                                        <OPTION>20 - 25 </OPTION>
-                                        <OPTION>25 - 30 </OPTION>
-                                        <OPTION>30 - 35 </OPTION>
-                                        <OPTION>40 - 45 </OPTION>
-                                        <OPTION>50 - 55 </OPTION>
-                                        <OPTION>65 - 70 </OPTION>
-                                        <OPTION>75 - 80 </OPTION>
-                                        <OPTION>85 - 90 </OPTION>
-                                    </SELECT> 
-                                </td>
-                                <td>
-                                    <input type="text" id="ville" name="ville" maxlength="40" placeholder="Ex: Toulouse" 
-                                    title="Entrez votre ville"/> 
-                                </td>
-                                <td>
-                                    <input type="email" id="email" name="email" placeholder="Ex: prenom@gmail.com" 
+                    <table name="informations">
+                        <tr>
+                            <td><label for="civilite">Civilité : </label></td>
+                            <td><label for="prenom">Prénom :</label></td>
+                            <td><label for="nom">Nom : </label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <SELECT name="civilite" size="1" id="appellation" title="Pour préciser votre civilité">
+                                    <OPTION> </OPTION>
+                                    <OPTION>Mme</OPTION>
+                                    <OPTION>M.</OPTION>
+                                </SELECT>
+                            </td>
+                            <td>
+                                <input type="text" id="prenom" name="prename" maxlength="40" placeholder="Ex: Michel"
+                                    title="Cette information sera invisible" />
+                            </td>
+                            <td>
+                                <input type="text" id="nom" name="nom" maxlength="40" placeholder="Ex: Dupont"
+                                    title="Cette information sera invisible" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="age">Age : <span class="txt-smaller">(*)</span> </label></td>
+                            <td><label for="ville">Commune : </label></td>
+                            <td><label for="email">Adresse email : <span class="txt-smaller">(*)</span> </label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <SELECT name="age" size="1" id="age" title="Merci de sélectioner votre âge" required>
+                                    <OPTION> </OPTION>
+                                    <OPTION>15 - 20 </OPTION>
+                                    <OPTION>20 - 25 </OPTION>
+                                    <OPTION>25 - 30 </OPTION>
+                                    <OPTION>30 - 35 </OPTION>
+                                    <OPTION>40 - 45 </OPTION>
+                                    <OPTION>50 - 55 </OPTION>
+                                    <OPTION>65 - 70 </OPTION>
+                                    <OPTION>75 - 80 </OPTION>
+                                    <OPTION>85 - 90 </OPTION>
+                                </SELECT>
+                            </td>
+                            <td>
+                                <input type="text" id="ville" name="ville" maxlength="40" placeholder="Ex: Toulouse"
+                                    title="Entrez votre ville" />
+                            </td>
+                            <td>
+                                <input type="email" id="email" name="email" placeholder="Ex: prenom@gmail.com"
                                     title="Format: contact@service.net" " required/> 
                                 </td>    
                             </tr>
                             <tr>
-                                <td><label for="pseudo">Pseudo : <span class="txt-smaller">(*)</span></label></td>
-                                <td><label for="password">Mot de passe : <span class="txt-smaller">(*)</span></label></td>
-                                <td><label for="repeat-password">Confirmer Mdp :<span class="txt-smaller">(*)</span></label></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="text" id="pseudo" name="pseudo" maxlength="40" placeholder="Ex: Michel32" 
-                                    title="Minimum 8 caractères. Votre pseudo sera visible." pattern="[A-Za-z0-9._-]{8,40}" required/> 
-                                </td>
-                                <td>
-                                    <input type="text" id="password" name="password" maxlength="16" placeholder="Ex: G7n77@rutP" 
-                                    title="Minimum 8 caractères, 1 chiffre, 1 majuscule et 1 minuscule"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
-                                </td>
-                                <td>
-                                    <input type="text" id="password" name="repeat-password" maxlength="16" placeholder="Ex: G7n77@rutP" 
-                                    title="Entrez votre mot de passe" required/>
-                                </td>  
-                            </tr>
-                        </table>
-                    </div>    
+                                <td><label for=" pseudo">Pseudo : <span class="txt-smaller">(*)</span></label>
+                            </td>
+                            <td><label for="password">Mot de passe : <span class="txt-smaller">(*)</span></label></td>
+                            <td><label for="repeat-password">Confirmer Mdp :<span class="txt-smaller">(*)</span></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" id="pseudo" name="pseudo" maxlength="40" placeholder="Ex: Michel32"
+                                    title="Minimum 8 caractères Votre pseudo sera visible."
+                                    pattern="[A-Za-z0-9._-]{8,40}" required />
+                            </td>
+                            <td>
+                                <input type="text" id="password" name="password" maxlength="16"
+                                    placeholder="Ex: G7n77@rutP"
+                                    title="Minimum 8 caractères, 1 chiffre, 1 majuscule et 1 minuscule"
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
+                            </td>
+                            <td>
+                                <input type="text" id="password" name="repeat-password" maxlength="16"
+                                    placeholder="Ex: G7n77@rutP" title="Entrez votre mot de passe" required />
+                            </td>
+                        </tr>
+                    </table>
                 </div>
+                <!-- <div item INFORMATIONS du <form > close ============-->
+                <!-- =========================================================-->
+
+                <!-- ===========================================================-->
+                <!-- <div item PRÉFÉRENCES du <form> begin ===========-->
                 <div class="formulaire_item">
                     <h4>Concernant les déchets que vous produisez, quelle est votre préférence ?</h4>
                     <label class="preference-label_box"> Les recycler
@@ -112,82 +140,108 @@
                         <span class="radio-checkmark"></span>
                     </label>
                     <img class="question_icon" id="recyc-question_icon" src="assets/images/question_icon.png"
-                    title="Plus d'infos" onclick="afficher_pop_up();"/>
+                        title="Plus d'infos" onclick="afficher_pop_up();" />
                     <label class="preference-label_box">Les éviter
                         <input type="radio" name="radio" value="1">
                         <span class="radio-checkmark"></span>
                     </label>
                     <img class="question_icon" id="avoid-question_icon" src="assets/images/question_icon.png"
-                    title="Plus d'infos" onclick="afficher_pop_up();"/>
+                        title="Plus d'infos" onclick="afficher_pop_up();" />
                     <label class="preference-label_box">Je ne peux choisir
                         <input type="radio" name="radio" value="2">
                         <span class="radio-checkmark"></span>
                     </label>
                     <img class="question_icon" id="both-question_icon" src="assets/images/question_icon.png"
-                    title="Plus d'infos" onclick="afficher_pop_up();"/>
+                        title="Plus d'infos" onclick="afficher_pop_up();" />
                 </div>
-<!-- <div id=POP UP> open ============================-->
-      <!-- ============================================-->
+                <!--  <div item PRÉFÉRENCES> close ============-->
+                <!-- ==================================================-->
+
+
+                <!-- ===========================================================-->
+                <!-- <div id=POP UP> begin ===========-->
                 <div id="pop-up_box1" class="pop-up_box">
-                    <p>En choisissant cette option notre application mettra en avant les localisations des différents lieux de collecte sur la carte correspondant à votre ville<span>.</span> Mais vous pourrez changer de ville à tout moment<span>.</span></p>
+                    <p>En choisissant cette option notre application mettra en avant les localisations des différents
+                        <strong>lieux de collecte</strong> sur la carte correspondant à votre ville<span>.</span> Mais
+                        vous pourrez changer de ville à tout moment<span>.</span>
+                    </p>
                     <input type="button" value="J'ai compris" name="pop-up_btn" id="pop-up_btn" class="pop-up_btn"
-                    title="Ferme la fenêtre d'informations" onclick="cacher_pop_up()"/>
+                        title="Ferme la fenêtre d'informations" onclick="cacher_pop_up()" />
                 </div>
                 <div id="pop-up_box2" class="pop-up_box">
-                    <p>En choisissant cette option notre application mettra en avant les différentes solutions qui existent afin d'éviter de produire le type de déchet choisi<span>.</span> Pour penser sur le <strong>long</strong> terme "l'avenir" des déchets<span>.</span></p>
+                    <p>En choisissant cette option notre application mettra en avant les différentes
+                        <strong>solutions</strong> qui existent afin d'éviter de produire le type de déchet
+                        choisi<span>.</span> Pour penser sur le <strong>long</strong> terme "l'avenir" des
+                        déchets<span>.</span>
+                    </p>
                     <input type="button" value="J'ai compris" name="pop-up_btn" id="pop-up_btn" class="pop-up_btn"
-                    title="Ferme la fenêtre d'informations" onclick="cacher_pop_up()"/>
+                        title="Ferme la fenêtre d'informations" onclick="cacher_pop_up()" />
                 </div>
                 <div id="pop-up_box3" class="pop-up_box">
-                    <p>En choisissant cette option notre application vous informera des différents lieux de collecte du déchet de votre ville ainsi que les solutions pour l'éviter<span>.</span>Pour penser sur le <strong>long</strong> terme "l'avenir" des déchets<span>.</span></p>
+                    <p>En choisissant cette option notre application vous informera des différents <strong>lieux de
+                            collecte</strong> du déchet de votre ville ainsi que les <strong>solutions</strong> pour
+                        l'éviter<span>.</span>Pour penser sur le <strong>long</strong> terme "l'avenir" des
+                        déchets<span>.</span></p>
                     <input type="button" value="J'ai compris" name="pop-up_btn" id="pop-up_btn" class="pop-up_btn"
-                    title="Ferme la fenêtre d'informations" onclick="cacher_pop_up()"/>
+                        title="Ferme la fenêtre d'informations" onclick="cacher_pop_up()" />
                 </div>
-<!-- <div id=POP UP> close ============================-->
-      <!-- ============================================-->
-                <div class="formulaire_item">            
+                <!-- <div id=POP UP> close ============-->
+                <!-- ==================================================-->
+
+
+                <!-- ===========================================================-->
+                <!-- <div item CGU & SUBMIT> begin ===========-->
+                <div class="formulaire_item">
                     <label class="condition-label_box">J'ai lu <a href="#">les conditions générales d'utilisation</a> et je les accepte<span>.</span><span class="txt-smaller">(*)</span>
                         <input type="checkbox" name="cgu" id="condition" title="Merci de prendre connaissance des CGU.">
                         <span class="checkmark"></span>
-                      </label>
-                </div>  
-                <div id="flexbox_cont">
-                    <p><input type="submit" value="S'inscrire" name="signup_submit" id="signup_submit" class="signup-btn" 
-                        title="Confirmer votre inscription."/></p>
-                    <p><input type="reset" value="Reset" name="reset" class="signup-btn"></p>
+                    </label>
                 </div>
-                      
-                        
-                
-                </form>
-            </div>       
-        </section>
+                <div id="formulaire_item-flex">
+                    <p><input type="submit" value="S'inscrire" name="signup_submit" id="signup_submit"
+                        class="signup-btn" title="Confirmer votre inscription" /></p>
+                    <p><input type="reset" value="Reset" name="reset" 
+                        class="signup-btn" title="Efface les saisies"></p>
+                </div>
+                <!-- <div item CGU & SUBMIT> close ============-->
+                <!-- ==================================================-->
+            </form>
+        </div>
+    </section>
+<!-- FORMULAIRE D'INSCRIPTION / <section> close ============-->
+<!-- ==================================================-->
 
-        <footer>
-            <div id="footer_box">
-                <div class="footer_item">
-                    <h3>Recyc'long</h3>
-                    <p>2 Rue du Doyen-Gabriel-Marty <br>
-                        31042 Toulouse </p>
-                </div>
-    
-                <div class="footer_item" id="reseaux">
-                    <h3>Nous suivre</h3>
-                    <a class="logo-reseaux" href="http://facebook.com" title="Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a class="logo-reseaux" href="http://instagram.com" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="logo-reseaux" href="http://twitter.com" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a class="logo-reseaux" href="http://linkedin.com" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
+    <footer>
+        <div id="footer_box">
+            <div class="footer_item">
+                <h3>Recyc'long</h3>
+                <p>2 Rue du Doyen-Gabriel-Marty <br>
+                    31042 Toulouse </p>
             </div>
-            <div id="footer_legend">
-                <p><a href="mailto:">Nous contacter </a></p>
-                <p>|</p>
-                <p><a href="#" title="Mentions légales" target="_blank">Mentions légales </a></p>
-                <p>|</p>
-                <p><a href="#" title="Conditions générales d'utilisation" target="_blank">Conditions générales d'utilisation (CGU)</a></p>
-                <p>|</p>
-                <p>© 2022 - Copyright</p>
+
+            <div class="footer_item" id="reseaux">
+                <h3>Nous suivre</h3>
+                <a class="logo-reseaux" href="http://facebook.com" title="Facebook" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="logo-reseaux" href="http://instagram.com" title="Instagram" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a class="logo-reseaux" href="http://twitter.com" title="Twitter" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a>
+                <a class="logo-reseaux" href="http://linkedin.com" title="Linkedin" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
-        </footer>
-    </body>
+        </div>
+        <div id="footer_legend">
+            <p><a href="mailto:">Nous contacter </a></p>
+            <p>|</p>
+            <p><a href="#" title="Mentions légales" target="_blank">Mentions légales </a></p>
+            <p>|</p>
+            <p><a href="#" title="Conditions générales d'utilisation" target="_blank">Conditions générales d'utilisation
+                    (CGU)</a></p>
+            <p>|</p>
+            <p>© 2022 - Copyright</p>
+        </div>
+    </footer>
+</body>
+
 </html>

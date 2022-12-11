@@ -1,6 +1,7 @@
 /* -----CHARTE GRAPHIQUE----- 
 NOIR : rgb(13, 13, 13)
 BLEU FONCÉ rgb(0, 51, 102)
+BLEU MOYEN rgb(0, 77, 153)
 BLEU CLAIR :rgb(102, 179, 255)
 BLANC : rgb(230, 230, 230)
 
@@ -223,6 +224,10 @@ footer h3 {
 .txt-smaller{
     font-size: 1.2ex;
 }
+.formulaire_item h3,
+.formulaire_item h4 {
+    color : rgb(0, 77, 153);
+}
 #formulaire_logo{
     width: 80px;
     display: block;
@@ -234,12 +239,10 @@ form {
 #section-formulaire_box{
     background: white;
     border-radius: 10px;
-    width: 50%;
 }
 #section-formulaire_box,
 .formulaire_item,
-.formulaire_item h3,
-.formulaire_input{
+.formulaire_item h3{
     width: max-content;
     margin: auto;
 }
@@ -371,7 +374,7 @@ input[type=email]:focus {
 .pop-up_box p{
     margin: 0;
 }
-#flexbox_cont{
+#formulaire_item-flex{
     display: flex;
     justify-content: space-evenly;
 }
