@@ -337,6 +337,25 @@ input[type=email]:focus {
 .formulaire_item a{
     color: rgb(0, 51, 102);
 }
+#pop-up_box{
+    width: 12%;
+    padding: 3ex;
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+    left: 56%;
+    text-align: justify;
+    font-size: 1.4ex;
+    background: rgb(230,230,230);
+    border: 2px solid rgb(0, 51, 102);
+}
+#pop-up_box p{
+    margin: 0;
+}
+.pop-up_btn{
+    margin-left: 25%;
+    margin-top: 5%;
+}
 #flexbox_cont{
     display: flex;
     justify-content: space-evenly;
