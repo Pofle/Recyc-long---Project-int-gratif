@@ -234,12 +234,10 @@ form {
 #section-formulaire_box{
     background: white;
     border-radius: 10px;
-    width: 50%;
 }
 #section-formulaire_box,
 .formulaire_item,
-.formulaire_item h3,
-.formulaire_input{
+.formulaire_item h3{
     width: max-content;
     margin: auto;
 }
@@ -371,7 +369,7 @@ input[type=email]:focus {
 .pop-up_box p{
     margin: 0;
 }
-#flexbox_cont{
+#formulaire_item-flex{
     display: flex;
     justify-content: space-evenly;
 }
