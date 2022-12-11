@@ -75,10 +75,12 @@
                                     </SELECT> 
                                 </td>
                                 <td>
-                                    <input type="text" id="ville" name="ville" maxlength="40" placeholder="Ex: Toulouse" title="Entrez votre ville"/> 
+                                    <input type="text" id="ville" name="ville" maxlength="40" placeholder="Ex: Toulouse" 
+                                    title="Entrez votre ville"/> 
                                 </td>
                                 <td>
-                                    <input type="email" id="email" name="email" placeholder="Ex: prenom@gmail.com" title="Entrez votre adresse mail" required/> 
+                                    <input type="email" id="email" name="email" placeholder="Ex: prenom@gmail.com" 
+                                    title="Format: contact@service.net" " required/> 
                                 </td>    
                             </tr>
                             <tr>
@@ -88,13 +90,16 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="text" id="pseudo" name="pseudo" maxlength="20" placeholder="Ex: Michel32" title="Votre pseudo sera visible." required/> 
+                                    <input type="text" id="pseudo" name="pseudo" maxlength="40" placeholder="Ex: Michel32" 
+                                    title="Minimum 8 caractères. Votre pseudo sera visible." pattern="[A-Za-z0-9._-]{8,40}" required/> 
                                 </td>
                                 <td>
-                                    <input type="text" id="password" name="password" maxlength="16" placeholder="Ex: G7n77@rutP" title="Entrez votre mot de passe" required/>
+                                    <input type="text" id="password" name="password" maxlength="16" placeholder="Ex: G7n77@rutP" 
+                                    title="Minimum 8 caractères, 1 chiffre, 1 majuscule et 1 minuscule"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
                                 </td>
                                 <td>
-                                    <input type="text" id="password" name="repeat-password" maxlength="16" placeholder="Ex: G7n77@rutP" title="Entrez votre mot de passe" required/>
+                                    <input type="text" id="password" name="repeat-password" maxlength="16" placeholder="Ex: G7n77@rutP" 
+                                    title="Entrez votre mot de passe" required/>
                                 </td>  
                             </tr>
                         </table>
