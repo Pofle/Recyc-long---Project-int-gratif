@@ -2,7 +2,7 @@
 NOIR : rgb(13, 13, 13)
 BLEU FONCÉ rgb(0, 51, 102)
 BLEU CLAIR :rgb(102, 179, 255)
-GRIS/BLANC : rgb(230, 230, 230)
+BLANC : rgb(230, 230, 230)
 
 POLICE TITRE: font-family: 'heavitas';
 POLICE PARAGRAPHE : 'geoslab'
@@ -223,7 +223,7 @@ footer h3 {
 .txt-smaller{
     font-size: 1.2ex;
 }
-.formulaire_item img{
+#formulaire_logo{
     width: 80px;
     display: block;
     margin: auto;
@@ -269,16 +269,13 @@ select{
     color: #74646e;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 1px 1px 2px #999;
+    box-shadow: 1px 1px 2px rgb(153,153,153);
 }
 select {
     width: 6em;
     appearance: none;
     background: url("assets/images/arrow_down.png") 90% / 20% no-repeat white;
-    color: #74646e;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 2px #999;
-    border-radius: 5px;
+    
 }
 select:focus {
     background: url("assets/images/arrow_up.png") 90% / 20% no-repeat rgb(230, 230, 230);
@@ -320,7 +317,7 @@ input[type=email]:focus {
     width: 20px;
     background-color: rgb(230, 230, 230);
     border: 1px solid #ccc;
-    box-shadow: 1px 1px 2px #999;
+    box-shadow: 1px 1px 2px rgb(153,153,153);
   }
 .preference-label_box:hover input ~ .radio-checkmark,
 .condition-label_box:hover input ~ .checkmark{
@@ -333,31 +330,78 @@ input[type=email]:focus {
 .condition-label_box {
     padding-left: 35px;
   }
+.question_icon{
+    width: 0.9em;
+    position: absolute;
+  }
+.question_icon:hover{
+    cursor: help;
+}
+#recyc-question_icon{
+    left: 52%;
+    bottom: 30%;
+}
+#avoid-question_icon{
+    left: 50.5%;
+    bottom: 25%;
+}
+#both-question_icon{
+    left: 55.3%;
+    bottom: 20%;
+}
 
-.formulaire_item a{
-    color: rgb(0, 51, 102);
+.pop-up_box{
+    width: 12%;
+    padding: 3ex;
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+    left: 56%;
+
+    text-align: justify;
+    font-size: 1.4ex;
+
+    background: rgb(230,230,230);
+    border: 2px solid rgb(0, 51, 102);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(70, 70, 70);
+
+    display: none;
+}
+.pop-up_box p{
+    margin: 0;
 }
 #flexbox_cont{
     display: flex;
     justify-content: space-evenly;
 }
-.signup-btn {
+.signup-btn,
+.pop-up_btn{
     background-image: linear-gradient(144deg, rgb(0, 51, 102), #5B42F3 50%, #ab9ff9);
     border: 0;
     border-radius: 8px;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-shadow: 2px 2px 3px rgb(70,70,70);
     box-sizing: border-box;
-    color: #FFFFFF;
-    box-shadow: 2px 2px 3px #999;
+    color: rgb(230,230,230);
+    font-family: 'geoslab';
+    cursor: pointer;
+}
+.pop-up_btn{
+    margin-left: 25%;
+    margin-top: 10%;
+    padding: 0.5ex 1ex;
+}
+.signup-btn {
     width: 140px;
     padding: 10px 15px;
-    font-family: 'geoslab';
-    text-decoration: none;
-    cursor: pointer;
+    
   }
-  .signup-btn:hover{
+  .signup-btn:hover,
+  .pop-up_btn:hover{
     background-image: linear-gradient(144deg, rgb(1, 39, 77), #3b2c9d 50%, #6a6494);
     
   }
-
+  .formulaire_item a{
+    color: rgb(0, 51, 102);
+}
   
