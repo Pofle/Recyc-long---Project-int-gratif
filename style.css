@@ -228,7 +228,9 @@ footer h3 {
     display: block;
     margin: auto;
 }
-
+form {
+    margin-top: 2em;
+}
 #section-formulaire_box{
     background: white;
     border-radius: 10px;
@@ -272,14 +274,18 @@ select{
 select {
     width: 6em;
     appearance: none;
-    background: url("assets/images/arrow_down.png") 90% / 20% no-repeat #eee;
+    background: url("assets/images/arrow_down.png") 90% / 20% no-repeat white;
     color: #74646e;
     border: 1px solid #ccc;
-    border-radius: 5px;
     box-shadow: 1px 1px 2px #999;
+    border-radius: 5px;
 }
 select:focus {
-    background: url("assets/images/arrow_up.png") 90% / 20% no-repeat #eee;
+    background: url("assets/images/arrow_up.png") 90% / 20% no-repeat rgb(230, 230, 230);
+}
+input[type=text]:focus,
+input[type=email]:focus {
+    background: rgb(230, 230, 230);
 }
 .preference-label_box{
     padding-left: 100px;
@@ -302,6 +308,9 @@ select:focus {
     border-radius: 50%;
     margin-left: 4em;
   }
+  .checkmark{
+    border-radius: 3px;
+  }
 .radio-checkmark,
 .checkmark {
     position: absolute;
@@ -309,7 +318,9 @@ select:focus {
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: #eee;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #999;
   }
 .preference-label_box:hover input ~ .radio-checkmark,
 .condition-label_box:hover input ~ .checkmark{
@@ -340,8 +351,12 @@ select:focus {
     box-shadow: 2px 2px 3px #999;
     width: 140px;
     padding: 10px 15px;
+    font-family: 'geoslab';
     text-decoration: none;
     cursor: pointer;
+  }
+  .signup-btn:hover{
+    background-image: linear-gradient(144deg, rgb(1, 39, 77), #3b2c9d 50%, #6a6494);
     
   }
 
