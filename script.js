@@ -1,14 +1,17 @@
 
 
 
-function pop_up(divIBAN){
-    var iban = document.getElementById('divIBAN');
+function afficher_pop_up(recyc_question_icon){
+    const button = document.getElementById('recyc-question_icon');
+    var pop_up = document.getElementById('pop-up_box');
 
-    iban.style.display = "block";
+    button.addEventListener('click', event => { pop_up.style.display = "block"; });
 }
 
-function cacherIban(divIBAN){
-    var iban =document.getElementById('divIBAN');
 
-    iban.style.display = 'none';
+
+function cacher_pop_up(){
+    var pop_up =document.getElementById('pop-up_box');
+
+    pop_up.style.display = 'none';
 }

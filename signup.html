@@ -111,7 +111,8 @@
                         <input type="radio" checked="checked" name="radio" value="0">
                         <span class="radio-checkmark"></span>
                     </label>
-                    <img class="question_icon" id="recyc-question_icon" src="assets/images/question_icon.png"/>
+                    <img class="question_icon" id="recyc-question_icon" src="assets/images/question_icon.png"
+                    title="Plus d'informations" onclick="afficher_pop_up();"/>
                     <label class="preference-label_box">Les éviter
                         <input type="radio" name="radio" value="1">
                         <span class="radio-checkmark"></span>
@@ -127,7 +128,7 @@
                 <div id="pop-up_box">
                     <p>En choisissant cette option notre application mettra en avant les localisations des différents lieux de collecte sur la carte correspondant à votre ville<span>.</span> Mais vous pourrez changer de ville à tout moment<span>.</span></p>
                     <input type="button" value="J'ai compris" name="pop-up_btn" id="pop-up_btn" class="pop-up_btn"
-                    title="Ferme la fenêtre d'informations"/>
+                    title="Ferme la fenêtre d'informations" onclick="cacher_pop_up()"/>
                 </div>
 
                 <div class="formulaire_item">            
