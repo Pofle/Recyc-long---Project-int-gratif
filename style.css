@@ -223,7 +223,7 @@ footer h3 {
 .txt-smaller{
     font-size: 1.2ex;
 }
-.formulaire_item img{
+#formulaire_logo{
     width: 80px;
     display: block;
     margin: auto;
@@ -333,10 +333,26 @@ input[type=email]:focus {
 .condition-label_box {
     padding-left: 35px;
   }
-
-.formulaire_item a{
-    color: rgb(0, 51, 102);
+.question_icon{
+    width: 0.9em;
+    position: absolute;
+  }
+.question_icon:hover{
+    cursor: help;
 }
+#recyc-question_icon{
+    left: 52%;
+    bottom: 30%;
+}
+#avoid-question_icon{
+    left: 50.5%;
+    bottom: 25%;
+}
+#both-question_icon{
+    left: 55.3%;
+    bottom: 20%;
+}
+
 #pop-up_box{
     width: 12%;
     padding: 3ex;
@@ -348,6 +364,8 @@ input[type=email]:focus {
     font-size: 1.4ex;
     background: rgb(230,230,230);
     border: 2px solid rgb(0, 51, 102);
+
+    display: none;
 }
 #pop-up_box p{
     margin: 0;
@@ -378,5 +396,7 @@ input[type=email]:focus {
     background-image: linear-gradient(144deg, rgb(1, 39, 77), #3b2c9d 50%, #6a6494);
     
   }
-
+  .formulaire_item a{
+    color: rgb(0, 51, 102);
+}
   
