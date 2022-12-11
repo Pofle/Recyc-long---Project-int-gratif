@@ -70,23 +70,19 @@ header img {
 
 nav {
     background-color: rgb(51, 163, 51);
-    
 }
-
-#menu { /* id= menu de la liste <ul>*/
+#nav-ul_box{
+    font-family: 'heavitas';
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-
-    font-family: 'heavitas';
 }
-
-#menu a {
+#nav-ul_box a {
     text-decoration: none;
     color: rgb(13, 13, 13);
     padding-bottom: 2ex;
 }
-#menu a:hover{
+#nav-ul_box a:hover{
     color: white;
     animation-name: nav_transition;
     animation-duration: 0.4s;
@@ -227,30 +223,49 @@ footer h3 {
 }
 
 /* --------------------------- SECTION PAGE LOGIN --------------------------- */
+.txt-smaller{
+    font-size: 1.2ex;
+}
+.formulaire_item img{
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+
 #section-formulaire_box{
     background: white;
+    border-radius: 10px;
+    width: 50%;
+}
+#section-formulaire_box,
+.formulaire_item,
+.formulaire_item h3,
+.formulaire_input{
     width: max-content;
     margin: auto;
 }
-.formulaire_item{
-    
-    width: max-content;
-    padding: 2ex;
-    margin: auto;
+.formulaire_item,
+.login-btn{
+    padding: 0ex 2ex;
+    margin-bottom: 1em;
 }
-table{
-    text-align: center;
-}
+
 td {
     margin-left: 2ex;
+}
+table[name=informations]{
+    text-align: center;
+}
+table[name=preferences]{
+    text-align: center;
 }
 
 input[type=text],
 input[type=email],
-select {
+select{
     padding: 1.5ex;
     border-radius: 5px;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     outline: none;
     color: #74646e;
     border: 1px solid #ccc;
@@ -269,3 +284,68 @@ select {
 select:focus {
     background: url("assets/images/arrow_up.png") 90% / 20% no-repeat #eee;
 }
+.preference-label_box{
+    padding-left: 100px;
+    margin-left: 8em;
+}
+.preference-label_box,
+.condition-label_box {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+  }
+  
+.preference-label_box input,
+.condition-label_box input {
+    opacity: 0;
+    cursor: pointer;
+  }
+.radio-checkmark{
+    border-radius: 50%;
+    margin-left: 4em;
+  }
+.radio-checkmark,
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+  }
+.preference-label_box:hover input ~ .radio-checkmark,
+.condition-label_box:hover input ~ .checkmark{
+    background-color: #ccc;
+  }
+.preference-label_box input:checked ~ .radio-checkmark,
+.condition-label_box input:checked ~ .checkmark {
+    background-color: rgb(0, 51, 102);
+  }
+.condition-label_box {
+    padding-left: 35px;
+  }
+
+.formulaire_item a{
+    color: rgb(0, 51, 102);
+}
+#flexbox_cont{
+    display: flex;
+    justify-content: space-evenly;
+}
+.login-btn {
+    background-image: linear-gradient(144deg, rgb(0, 51, 102), #5B42F3 50%, #ab9ff9);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    box-shadow: 2px 2px 3px #999;
+    width: 140px;
+    padding: 10px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    
+  }
+
+  
