@@ -1,6 +1,9 @@
 /* -----CHARTE GRAPHIQUE----- 
-VERT : rgb(51, 163, 51)
 NOIR : rgb(13, 13, 13)
+BLEU FONCÉ rgb(0, 51, 102)
+BLEU MOYEN rgb(0, 77, 153)
+BLEU CLAIR :rgb(102, 179, 255)
+BLANC : rgb(230, 230, 230)
 
 POLICE TITRE: font-family: 'heavitas';
 POLICE PARAGRAPHE : 'geoslab'
@@ -10,86 +13,84 @@ POLICE PARAGRAPHE : 'geoslab'
 
 @font-face {
     font-family: 'heavitas';
-    src: url('fonts/Heavitas.ttf') format('truetype');
+    src: url('assets/fonts/Heavitas.ttf') format('truetype');
         font-weight: normal;
         font-style: normal; 
 }
 @font-face {
     font-family: 'geoslab';
-    src : url('fonts/GeoSlab\ _regular.otf') format('opentype');
+    src : url('assets/fonts/GeoSlab\ _regular.otf') format('opentype');
         font-weight: normal;
         font-style: normal;
 }
 
 body {
     width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'geoslab';
+    font-family: 'geoslab', sans-serif;
+    background: rgb(230, 230, 230);
 }
-
+span{
+    font-family: sans-serif; /*Problème avec le POINT de cette caligraphie et flemme pour le moment d'en changer...*/
+}
 header {
+    position: fixed;
+    z-index: 2;
     display: flex;
     width: 100%;
-    border-radius: 10px 10px 0px 0px;
-
-
-    background-color: rgb(51, 163, 51);
+    height: max-content;
+    background: white;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
 }
+
 header img {
-    width : 80px;
+    width : 60px;
     margin: 1em 0px 0px 1em;
 }
 
-#logo_box p { /* Touche le SLOGAN sous le logo */
+#logo-header_box p { /* Touche le SLOGAN sous le logo */
     margin: 0px 0px 0px 5px;
+    font-size: 1.4ex;
 }
 
-#logo_box + h1 { /* Touche "Recyc'long !" */
-
-    width: max-content;
-    height: max-content;
-    margin: 1ex 0ex 0ex 30%;
+#logo-header_box + h1 { /* Touche "Recyc'long !" */
     
-    background-color: white;
+    height: max-content;
     padding: 1ex;
     border-radius: 10px;
-
     font-family: 'heavitas';
-    color: rgb(13, 13, 13);
+    color: rgb(0, 51, 102);
+    
 }
-
-nav {
-    width: 100%;
-
-    background-color: rgb(51, 163, 51);
-    border-radius: 0px 0px 10px 10px;
+nav{
+    align-self: flex-end;
+    margin-left: 5em;
 }
-
-#menu { /* id= menu de la liste <ul>*/
+#nav-ul_box{
+    font-family: 'heavitas';
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style-type: none;
-
-    font-family: 'heavitas';
+    width: 100%;
 }
-
-#menu a {
+#nav-ul_box a {
     text-decoration: none;
     color: rgb(13, 13, 13);
-    padding-bottom: 2ex;
+    padding-bottom: 1ex;
 }
-#menu a:hover{
-    color: white;
+#nav-ul_box a:hover{
+    color: rgb(102, 179, 255);
     animation-name: nav_transition;
     animation-duration: 0.4s;
     animation-timing-function: linear;
 }
 /* Animation navigation */
 @keyframes nav_transition {
-    from{color:black;}
-    to{color:white;}
+    from{color:rgb(13, 13, 13);}
+    to{color:rgb(102, 179, 255);}
     
 }
 .hvr-underline-from-center {
@@ -97,7 +98,6 @@ nav {
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
   }
@@ -108,7 +108,7 @@ nav {
     left: 51%;
     right: 51%;
     bottom: 0;
-    background: white;
+    background: rgb(102, 179, 255);
     height: 4px;
     -webkit-transition-property: left, right;
     transition-property: left, right;
@@ -123,18 +123,52 @@ nav {
   }
 
 section {
-    border: 2px solid green;
     width: 100%;
-
-    
-    margin-top: 2%;
+    position: relative;
+    margin-top: 10%;
+}
+#article-presentation_box{
+    background: rgb(230, 230, 230);
+    padding-bottom: 2em;
+}
+.presentation_item{
+    display: flex;
+    justify-content: center;
+}
+.presentation_item img {
+    width: 30%;
+    clip-path:ellipse(33% 50%);
+}
+.presentation_item h2{
+    font-size: 4ex;
+}
+.presentation_item p {
+    text-align: justify;
+}
+.presentation_txt{
+    width: 20%;
 }
 
+#article-agir_box{
+    background: rgb(102, 179, 255);
+    display: flex;
+    justify-content: center;
+}
+#article-agir_box img{
+    width: 8em;
+    height: 8em;
+    margin-right: 7em;
+    margin-top: 2em;
+}
+.agir_txt{
+    width: 30%;
+    text-align: justify;
+}
 footer {
     width: 100%;
     color: white; 
+    margin-top: 1em;
 }
-
 #footer_box {
     display: flex;
     justify-content: space-evenly;
@@ -158,12 +192,12 @@ footer h3 {
     color: white;
 }
 .logo-reseaux:hover{
-    animation-name: logo_transition;
+    animation-name: logo_transition-hvr;
     animation-duration: 0.5s;
     background-color: rgb(255, 255, 255);
     color: rgb(13, 13, 13);
 }
-@keyframes logo_transition {
+@keyframes logo_transition-hvr {
     from {background-color: transparent; color:rgb(255, 255, 255)}
     to{background-color: rgb(255, 255, 255); color: rgb(13, 13, 13);}
 }
@@ -185,3 +219,192 @@ footer h3 {
         text-decoration: none;
         color: white;
 }
+
+/* --------------------------- SECTION PAGE LOGIN --------------------------- */
+.txt-smaller{
+    font-size: 1.2ex;
+}
+.formulaire_item h3,
+.formulaire_item h4 {
+    color : rgb(0, 77, 153);
+}
+#formulaire_logo{
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+form {
+    margin-top: 2em;
+}
+#section-formulaire_box{
+    background: white;
+    border-radius: 10px;
+}
+#section-formulaire_box,
+.formulaire_item,
+.formulaire_item h3{
+    width: max-content;
+    margin: auto;
+}
+.formulaire_item,
+.login-btn{
+    padding: 0ex 2ex;
+    margin-bottom: 1em;
+}
+
+td {
+    margin-left: 2ex;
+}
+table[name=informations]{
+    text-align: center;
+}
+table[name=preferences]{
+    text-align: center;
+}
+
+input[type=text],
+input[type=email],
+select{
+    padding: 1.5ex;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    outline: none;
+    color: #74646e;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgb(153,153,153);
+}
+select {
+    width: 6em;
+    appearance: none;
+    background: url("assets/images/arrow_down.png") 90% / 20% no-repeat white;
+    
+}
+select:focus {
+    background: url("assets/images/arrow_up.png") 90% / 20% no-repeat rgb(230, 230, 230);
+}
+input[type=text]:focus,
+input[type=email]:focus {
+    background: rgb(230, 230, 230);
+}
+.preference-label_box{
+    padding-left: 100px;
+    margin-left: 8em;
+}
+.preference-label_box,
+.condition-label_box {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+  }
+  
+.preference-label_box input,
+.condition-label_box input {
+    opacity: 0;
+    cursor: pointer;
+  }
+.radio-checkmark{
+    border-radius: 50%;
+    margin-left: 4em;
+  }
+  .checkmark{
+    border-radius: 3px;
+  }
+.radio-checkmark,
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px rgb(153,153,153);
+  }
+.preference-label_box:hover input ~ .radio-checkmark,
+.condition-label_box:hover input ~ .checkmark{
+    background-color: #ccc;
+  }
+.preference-label_box input:checked ~ .radio-checkmark,
+.condition-label_box input:checked ~ .checkmark {
+    background-color: rgb(0, 51, 102);
+  }
+.condition-label_box {
+    padding-left: 35px;
+  }
+.question_icon{
+    width: 0.9em;
+    position: absolute;
+  }
+.question_icon:hover{
+    cursor: help;
+}
+#recyc-question_icon{
+    left: 52%;
+    bottom: 30%;
+}
+#avoid-question_icon{
+    left: 50.5%;
+    bottom: 25%;
+}
+#both-question_icon{
+    left: 55.3%;
+    bottom: 20%;
+}
+
+.pop-up_box{
+    width: 12%;
+    padding: 3ex;
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+    left: 56%;
+
+    text-align: justify;
+    font-size: 1.4ex;
+
+    background: rgb(230,230,230);
+    border: 2px solid rgb(0, 51, 102);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(70, 70, 70);
+
+    display: none;
+}
+.pop-up_box p{
+    margin: 0;
+}
+#formulaire_item-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.signup-btn,
+.pop-up_btn{
+    background-image: linear-gradient(144deg, rgb(0, 51, 102), #5B42F3 50%, #ab9ff9);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px rgb(70,70,70);
+    box-sizing: border-box;
+    color: rgb(230,230,230);
+    font-family: 'geoslab';
+    cursor: pointer;
+}
+.pop-up_btn{
+    margin-left: 25%;
+    margin-top: 10%;
+    padding: 0.5ex 1ex;
+}
+.signup-btn {
+    width: 140px;
+    padding: 10px 15px;
+    
+  }
+  .signup-btn:hover,
+  .pop-up_btn:hover{
+    background-image: linear-gradient(144deg, rgb(1, 39, 77), #3b2c9d 50%, #6a6494);
+    
+  }
+  .formulaire_item a{
+    color: rgb(0, 51, 102);
+}
+  
