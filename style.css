@@ -1,6 +1,7 @@
 /* -----CHARTE GRAPHIQUE----- 
 NOIR : rgb(13, 13, 13)
 BLEU FONCÉ rgb(0, 51, 102)
+BLEU MOYEN rgb(0, 77, 153)
 BLEU CLAIR :rgb(102, 179, 255)
 BLANC : rgb(230, 230, 230)
 
@@ -222,6 +223,10 @@ footer h3 {
 /* --------------------------- SECTION PAGE LOGIN --------------------------- */
 .txt-smaller{
     font-size: 1.2ex;
+}
+.formulaire_item h3,
+.formulaire_item h4 {
+    color : rgb(0, 77, 153);
 }
 #formulaire_logo{
     width: 80px;
