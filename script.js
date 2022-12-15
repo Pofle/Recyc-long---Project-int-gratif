@@ -1,6 +1,7 @@
+/*  FONCTION POUR LA POP-UP FORMULAIRE D'ENREGISTREMENT----
+--------------------------------------------------------------------------------------------> */
 
-
-
+//Afficher la Pop-Up au click sur l'icone (?) 
 function afficher_pop_up(recyc_question_icon){
     const help_recyc = document.getElementById('recyc-question_icon');
     const help_avoir = document.getElementById('avoid-question_icon');
@@ -23,8 +24,7 @@ function afficher_pop_up(recyc_question_icon){
 
 }
 
-
-
+//Cacher la Pop-up au click sur "J'ai compris".
 function cacher_pop_up(){
     var pop_up = document.getElementById('pop-up_box1');
     var pop_up2 = document.getElementById('pop-up_box2');
@@ -34,3 +34,7 @@ function cacher_pop_up(){
     pop_up2.style.display = 'none';
     pop_up3.style.display = 'none';
 }
+
+/*  FONCTION POUR ANIMER ACCORDEON PAGE RECYCLER----
+--------------------------------------------------------------------------------------------> */
+

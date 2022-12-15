@@ -25,41 +25,57 @@
                 </ul>
             </nav>
         </header>
+
+
+
+        <!-- ===========================================================-->
+                <!-- <section> begin ===========-->
         <section>
-            <article id="article-presentation_box">
-                <div class="presentation_item">
-                    <img src="assets/images/poubelles.jpg" alt="Photo de poubelles de tri." />
-                    <div class="presentation_txt">
-                        <h2>Qui sommes-nous ?</h2>
-                        <p>Eco-organisme à but nonlucratif, nous oeuvrons à la sensibiliation et l'information sur le devenir de nos
-                        déchets, ainsi que sur les moyens de les recycler et de les éviter<span>.</span></p>
-                    </div>
+            <!-- ===========================================================-->
+                <!-- <aside SELECTION déchet begin ===========-->
+            <aside>
+                <button class="accordion" name="alimentaire" onclick="accordeon()">Déchet alimentaire</button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
                 </div>
-                <div class="presentation_item">
-                    <div class="presentation_txt">
-                        <h2>Recycler c'est protéger</h2>
-                        <p>Contenu du contenu avec du contenu et du contenu qui font toujours plus de contenu et encore plus de
-                        contenue car du contenue sur du contenu fait du contenu <span>.</span></p>
-                    </div>
-                    <img src="assets/images/plante.jpg" alt="Photo d'une pousse dans les mains d'une personne." />
+                <button class="accordion" name="plasique">Plastique</button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
                 </div>
-            </article>
-            <article id="article-agir_box">
-                <img src="assets/images/logo_plante.png" />
-                <div class="agir_txt">
-                    <h2>Comprendre pour agir</h2>
-                    <p>Le recyclage pourquoi ? Quelles solutions de collecte ? Comment faire réparer un appareil en panne ? A qui
-                        donner un équipement inutilisé ? C’est quoi l’éco-participation ? Comment se déroule le recyclage ?
-                        Approfondissez vos connaissances sur le recyclage<span>.</span></p>
+
+                <button class="accordion" name="verre">Verre</button>
+                <div class="panel">
+                    <p>Lorem ipsum...</p>
                 </div>
-            </article>
+            </aside>
+            <!-- <aside SELECTION déchet close ============-->
+            <!-- ==================================================-->
+            <!-- JAVASCRIPT POUR ACCORDEON (quand lié avec page.jS -> fonctionne que au deuxième click....)-->
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+                
+                for (i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                      panel.style.display = "none";
+                    } else {
+                      panel.style.display = "block";
+                    }
+                  });
+                }
+            </script>
+            <!-- JAVASCRIPT ACCORDEON FIN -->
+
             <article>
-                <p>du contenu</p>
-            </article>
-            <article>
-                <p>du contenu</p>
+
             </article>
         </section>
+        <!-- <section> close ============-->
+        <!-- ==================================================-->
+
         <footer>
             <div id="footer_box">
                 <div class="footer_item">
