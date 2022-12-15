@@ -2,93 +2,104 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="script.js"></script>
         <script src="https://kit.fontawesome.com/81109a7f0c.js" crossorigin="anonymous"></script>
+
         <title>Recyc'long</title>
     </head>
 
-    <body>
-        <header>
-            <div id="logo_box">
-                <img src="images/recycler.png"/>
-                <p> Blabla Slogan</p>
-            </div>
-            <h1>Recyc'long </h1>
-        </header>
+<body>
+    <header>
+        <div id="logo-header_box">
+            <img src="assets/images/recyclong_logo.png" />
+            <p> Blabla Slogan</p>
+        </div>
+        <h1>Recyc'long </h1>
         <nav>
-            <ul id="menu">
-                <li><a class="hvr-underline-from-center" href="#">Accueil</a></li>
-                <li><a class="hvr-underline-from-center" href="#">Recyclez </a></li>
-                <li><a class="hvr-underline-from-center" href="#">S'inscrire</a></li>
-                <li><a class="hvr-underline-from-center" href="#">Se connecter</a></li>
+            <ul id="nav-ul_box">
+                <li><a class="hvr-underline-from-center" href="index.html">Accueil</a></li>
+                <li><a class="hvr-underline-from-center" href="recycler.html">Recyclez </a></li>
+                <li><a class="hvr-underline-from-center" href="signup.html">S'inscrire</a></li>
+                <li><a class="hvr-underline-from-center" href="login.html">Se connecter</a></li>
             </ul>
         </nav>
-        
-        <section>
-            <div class="contenu">
-                <h2>Veuillez vous connecter à notre site web</h2>
-                <form method="get" action="confirmation.html">
-                    <table>
+    </header>
 
-                        <tr>
-                            <td><label for="email">Adresse mail: </label></td>
-                            <td><input type="email" id="email" name="email" placeholder="Ex: prenom@gmail.com" 
-                                title="Entrez votre adresse mail" required/> (*)</td>
-                        </tr>
+    <section>
+        <div class="contenu">
+            <h2>Veuillez vous connecter à notre site web</h2>
+            <form method="get" action="confirmation.html">
+                <table>
 
-                        <tr>
-                            <td><label for="pwd">Votre mot de passe: </label></td>
-                            <td><input type="password" id="pwd" name="pwd" minlength="8" placeholder="********"
-                                title="Entrez votre adresse mail" required/> (*)</td>
-                        </tr>
+                    <tr>
+                        <td><label for="email">Adresse mail: </label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Ex: prenom@gmail.com"
+                                title="Entrez votre adresse mail" required /> (*)</td>
+                    </tr>
 
-                        <tr>
-                            <td><input type="checkbox" name="remember" id="remember" name="remember">
-                            <label>Se souvenir de moi</label></td>
-                            <td></td>
-                        </tr>
+                    <tr>
+                        <td><label for="pwd">Votre mot de passe: </label></td>
+                        <td><input type="password" id="pwd" name="pwd" minlength="8" placeholder="********"
+                                title="Entrez votre adresse mail" required /> (*)</td>
+                    </tr>
 
-                        <tr>
-                            <td><input type="submit" value="Se connecter" name="submit" id="submit" 
-                                title="Confirmer votre réservation"/></td>
-                            <td></td>
-                        </tr>
+                    <tr>
+                        <td><input type="checkbox" name="remember" id="remember" name="remember">
+                            <label>Se souvenir de moi</label>
+                        </td>
+                        <td></td>
+                    </tr>
 
-                        <tr>
-                            <td><p><a href="">Mot de passe oublié?</a></p></td>
-                            <td></td>
-                        </tr>
+                    <tr>
+                        <td><input type="submit" value="Se connecter" name="submit" id="submit"
+                                title="Confirmer votre réservation" /></td>
+                        <td></td>
+                    </tr>
 
-                    </table>
-                </form>
+                    <tr>
+                        <td>
+                            <p><a href="">Mot de passe oublié?</a></p>
+                        </td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer_box">
+            <div class="footer_item">
+                <h3>Recyc'long</h3>
+                <p>2 Rue du Doyen-Gabriel-Marty <br>
+                    31042 Toulouse </p>
             </div>
-        </section>
 
-        <footer>
-            <div id="footer_box">
-                <div class="footer_item">
-                    <h3>Recyc'long</h3>
-                    <p>2 Rue du Doyen-Gabriel-Marty <br>
-                        31042 Toulouse </p>
-                </div>
-    
-                <div class="footer_item" id="reseaux">
-                    <h3>Nous suivre</h3>
-                    <a class="logo-reseaux" href="http://facebook.com" title="Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a class="logo-reseaux" href="http://instagram.com" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="logo-reseaux" href="http://twitter.com" title="Twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a class="logo-reseaux" href="http://linkedin.com" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
+            <div class="footer_item" id="reseaux">
+                <h3>Nous suivre</h3>
+                <a class="logo-reseaux" href="http://facebook.com" title="Facebook" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="logo-reseaux" href="http://instagram.com" title="Instagram" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a class="logo-reseaux" href="http://twitter.com" title="Twitter" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a>
+                <a class="logo-reseaux" href="http://linkedin.com" title="Linkedin" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
             </div>
-            <div id="footer_legend">
-                <p><a href="mailto:">Nous contacter </a></p>
-                <p>|</p>
-                <p><a href="#" title="Mentions légales" target="_blank">Mentions légales </a></p>
-                <p>|</p>
-                <p><a href="#" title="Conditions générales d'utilisation" target="_blank">Conditions générales d'utilisation (CGU)</a></p>
-                <p>|</p>
-                <p>© 2022 - Copyright</p>
-            </div>
-        </footer>
-    </body>
+        </div>
+        <div id="footer_legend">
+            <p><a href="mailto:">Nous contacter </a></p>
+            <p>|</p>
+            <p><a href="#" title="Mentions légales" target="_blank">Mentions légales </a></p>
+            <p>|</p>
+            <p><a href="#" title="Conditions générales d'utilisation" target="_blank">Conditions générales d'utilisation
+                    (CGU)</a></p>
+            <p>|</p>
+            <p>© 2022 - Copyright</p>
+        </div>
+    </footer>
+</body>
+
 </html>
