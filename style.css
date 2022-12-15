@@ -351,16 +351,18 @@ input[type=email]:focus {
     cursor: help;
 }
 #recyc-question_icon{
-    left: 52%;
-    bottom: 30%;
+    left: 53%;
+    bottom: 34%;
 }
+
 #avoid-question_icon{
-    left: 50.5%;
-    bottom: 25%;
+    left: 51.5%;
+    bottom: 29%;
 }
 #both-question_icon{
-    left: 55.3%;
-    bottom: 20%;
+    left: 56.3%;
+    bottom: 25%;
+
 }
 
 .pop-up_box{
