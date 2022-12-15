@@ -164,6 +164,9 @@ section {
     width: 30%;
     text-align: justify;
 }
+#stat_box h2{
+    text-align: center;
+}
 footer {
     width: 100%;
     color: white; 
@@ -224,6 +227,7 @@ footer h3 {
 .txt-smaller{
     font-size: 1.2ex;
 }
+section h2,
 .formulaire_item h3,
 .formulaire_item h4,
 article h3,
