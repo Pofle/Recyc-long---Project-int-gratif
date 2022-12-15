@@ -29,23 +29,33 @@
 
 
         <!-- ===========================================================-->
-                <!-- <section> begin ===========-->
-        <section>
+        <!-- <section> begin ===========-->
+        <section id="recycler_box">
             <!-- ===========================================================-->
-                <!-- <aside SELECTION déchet begin ===========-->
+            <!-- <aside SELECTION déchet begin ===========-->
             <aside>
-                <button class="accordion" name="alimentaire" onclick="accordeon()">Déchet alimentaire</button>
+                <button class="accordion" name="alimentaire" onclick="accordeon()"> <img src="assets/images/food-waste.png"/> Déchet alimentaire</button>
                 <div class="panel">
-                    <p>Lorem ipsum...</p>
-                </div>
-                <button class="accordion" name="plasique">Plastique</button>
-                <div class="panel">
-                    <p>Lorem ipsum...</p>
+                    <ul>
+                        <li>Restes de viande</li>
+                        <li>Sachets de thé</li>
+                    </ul>
                 </div>
 
-                <button class="accordion" name="verre">Verre</button>
+                <button class="accordion" name="plasique"><img src="assets/images/waste-plastic.png"/> Plastique</button>
                 <div class="panel">
-                    <p>Lorem ipsum...</p>
+                    <ul>
+                        <li>Bouteilles de lait</li>
+                        <li>Rasoirs jetables</li>
+                    </ul>
+                </div>
+
+                <button class="accordion" name="verre"><img src="assets/images/waste-glass.png"/> Verre</button>
+                <div class="panel">
+                    <ul>
+                        <li>Bocaux</li>
+                        <li>Miroir cassé</li>
+                    </ul>
                 </div>
             </aside>
             <!-- <aside SELECTION déchet close ============-->
@@ -69,7 +79,19 @@
             </script>
             <!-- JAVASCRIPT ACCORDEON FIN -->
 
-            <article>
+
+            <!-- ===========================================================-->
+            <!-- <article MAP begin ===========-->
+
+            <article id="map">
+                <h3>Localisation des points de collecte</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11546.47467113227!2d1.53054755!3d43.656101549999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sfr!4v1671092416335!5m2!1sen!2sfr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </article>
+            <!-- ===========================================================-->
+            <!-- <article CONSEIL begin ===========-->
+            <article id="conseil">
+                <h3>Nos conseil pour moins en produire :</h3>
 
             </article>
         </section>
