@@ -409,25 +409,78 @@ input[type=email]:focus {
 }
   
 /* --------------------------- SECTION PAGE LOGIN --------------------------- */
+aside {
+    display: flex;
+    flex-direction: column;
+    
+}
+#recycler_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.accordion img {
+    width: 2em;
+}
+.position_choix{
+    margin-bottom: 2ex;
+}
+
 .accordion {
-    background-color: #eee;
+    background-color: rgb(238, 238, 238);
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
-  }
-  
-  .active, .accordion:hover {
+    font-family: 'geoslab', sans-serif;
+}
+
+.active, .accordion:hover {
     background-color: #ccc;
-  }
+}
   
-  .panel {
+.panel {
     padding: 0 18px;
     background-color: white;
     display: none;
     overflow: hidden;
-  }
+}
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.panel ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.5ex;
+}
+.panel li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+article {
+    background-color: rgb(238, 238, 238);
+}
+article h3 {
+    text-align: center;
+}
+#map{
+    width: 50%;
+}
+iframe {
+    width: 100%;
+}
+
+#conseil {
+    width: 30%;
+}
