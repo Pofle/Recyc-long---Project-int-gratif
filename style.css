@@ -220,12 +220,14 @@ footer h3 {
         color: white;
 }
 
-/* --------------------------- SECTION PAGE SIGNUP --------------------------- */
+/* --------------------------- SECTION FORMULAIRES --------------------------- */
 .txt-smaller{
     font-size: 1.2ex;
 }
 .formulaire_item h3,
-.formulaire_item h4 {
+.formulaire_item h4,
+article h3,
+#login-formulaire_box h3 {
     color : rgb(0, 77, 153);
 }
 #formulaire_logo{
@@ -234,20 +236,23 @@ footer h3 {
     margin: auto;
 }
 form {
-    margin-top: 2em;
+    margin: 2em 2em;
 }
-#section-formulaire_box{
+#section-formulaire_box,
+#login-formulaire_box{
     background: white;
     border-radius: 10px;
 }
 #section-formulaire_box,
 .formulaire_item,
-.formulaire_item h3{
+.formulaire_item h3,
+#login-formulaire_box{
     width: max-content;
     margin: auto;
 }
 .formulaire_item,
-.login-btn{
+.login-btn,
+#login_submit{
     padding: 0ex 2ex;
     margin-bottom: 1em;
 }
@@ -255,16 +260,17 @@ form {
 td {
     margin-left: 2ex;
 }
-table[name=informations]{
-    text-align: center;
-}
-table[name=preferences]{
+table[name=informations],
+table[name=preferences],
+#login-formulaire_box h3{
     text-align: center;
 }
 
+
 input[type=text],
 input[type=email],
-select{
+select,
+input[type=password]{
     padding: 1.5ex;
     border-radius: 5px;
     margin-bottom: 1em;
@@ -379,7 +385,8 @@ input[type=email]:focus {
     justify-content: space-evenly;
 }
 .signup-btn,
-.pop-up_btn{
+.pop-up_btn,
+#login_submit{
     background-image: linear-gradient(144deg, rgb(0, 51, 102), #5B42F3 50%, #ab9ff9);
     border: 0;
     border-radius: 8px;
@@ -394,13 +401,15 @@ input[type=email]:focus {
     margin-top: 10%;
     padding: 0.5ex 1ex;
 }
-.signup-btn {
+.signup-btn,
+#login_submit {
     width: 140px;
     padding: 10px 15px;
     
   }
   .signup-btn:hover,
-  .pop-up_btn:hover{
+  .pop-up_btn:hover,
+  #login_submit:hover{
     background-image: linear-gradient(144deg, rgb(1, 39, 77), #3b2c9d 50%, #6a6494);
     
   }
@@ -408,7 +417,7 @@ input[type=email]:focus {
     color: rgb(0, 51, 102);
 }
   
-/* --------------------------- SECTION PAGE LOGIN --------------------------- */
+/* --------------------------- SECTION PAGE RECYCLER --------------------------- */
 aside {
     display: flex;
     flex-direction: column;
@@ -473,6 +482,7 @@ article {
 }
 article h3 {
     text-align: center;
+    
 }
 #map{
     width: 50%;

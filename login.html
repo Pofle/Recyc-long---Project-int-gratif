@@ -27,34 +27,36 @@
     </header>
 
     <section>
-        <div class="contenu">
-            <h2>Veuillez vous connecter à notre site web</h2>
-            <form method="get" action="confirmation.html">
+        <div id="login-formulaire_box">
+            <h3>Veuillez vous connecter à notre site web</h3>
+            <form method="get" action="">
                 <table>
 
                     <tr>
                         <td><label for="email">Adresse mail: </label></td>
-                        <td><input type="email" id="email" name="email" placeholder="Ex: prenom@gmail.com"
-                                title="Entrez votre adresse mail" required /> (*)</td>
+                        <td><input type="email" id="email" name="email" placeholder="contact@service.net"
+                            title="Entrez votre adresse mail" required /> <span class="txt-smaller">(*)</span></td>
                     </tr>
 
                     <tr>
-                        <td><label for="pwd">Votre mot de passe: </label></td>
-                        <td><input type="password" id="pwd" name="pwd" minlength="8" placeholder="********"
-                                title="Entrez votre adresse mail" required /> (*)</td>
+                        <td><label for="pwd">Mot de passe: </label></td>
+                        <td><input type="password" id="password-login" name="pwd" minlength="8" placeholder="********"
+                                title="Entrez votre adresse mail" required /> <span class="txt-smaller">(*)</span></td>
                     </tr>
 
                     <tr>
-                        <td><input type="checkbox" name="remember" id="remember" name="remember">
-                            <label>Se souvenir de moi</label>
+                        <td colspan="2"><label class="condition-label_box">J'ai lu <a href="#">les conditions générales d'utilisation</a> et je les accepte<span>.</span><span class="txt-smaller">(*)</span>
+                            <input type="checkbox" name="cgu" id="condition" title="Merci de prendre connaissance des CGU."/>
+                            <span class="checkmark"></span>
+                        </label>
                         </td>
-                        <td></td>
+                        
                     </tr>
 
                     <tr>
-                        <td><input type="submit" value="Se connecter" name="submit" id="submit"
-                                title="Confirmer votre réservation" /></td>
-                        <td></td>
+                        <td><input type="submit" value="Se connecter" name="login-submit" id="login_submit"
+                                title="Connectez vous !" /></td>
+                        
                     </tr>
 
                     <tr>
